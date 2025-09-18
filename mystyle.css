@@ -4,14 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FFF5ED;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-nav { 
+nav {
     padding: 1rem;
-    background-color: #333;
+    background-color: #fff;
 }
 
 .nav-con {
@@ -20,7 +26,7 @@ nav {
 }
 
 .logo a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -32,15 +38,16 @@ nav {
 }
 
 .menu li {
-   margin: 0 1rem;
+    margin: 0 1rem;
 }
+
 .menu li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 
 .hero {
-    background-color: #f0f0f0;
+    background-color: #FAE0D8;
 }
 
 .hero-con {
@@ -83,18 +90,63 @@ nav {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 32px;
+    font-family: "Noto Sans Georgian", sans-serif;
+    color: #333;
+}
+
 .blog-con {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2rem;
 }
 
-.blog-title h3{
+.blog-con a {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.menu-card {
+    background: white;
+    /* กรอบขาว */
+    border-radius: 12px;
+    /* มุมโค้ง */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* เงาเบาๆ */
+    padding: 16px;
+    /* เว้นขอบใน */
+    margin: 20px;
+    /* ระยะห่างรอบนอก */
+    max-width: 300px;
+    /* ความกว้างสูงสุด */
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.menu-card h4 {
+    margin-top: 10px;
+}
+
+.blog-title h3 {
     margin: 2rem 0;
 }
 
 .blog-item img {
-   width: 100%;
+    width: 100%;
 }
 
 .blog-item h4 {
