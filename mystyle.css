@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 body {
     background-color: #FFF5ED;
     margin: 0;
@@ -83,8 +94,10 @@ nav {
 }
 
 .hero-btn:hover {
-    transform: translateY(-10px); /* เด้งขึ้นเล็กน้อย */
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* เพิ่มเงาให้ดูเด่นขึ้น */
+    transform: translateY(-10px);
+    /* เด้งขึ้นเล็กน้อย */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาให้ดูเด่นขึ้น */
 }
 
 .hero-img img {
@@ -136,12 +149,14 @@ h2 {
     /* ระยะห่างรอบนอก */
     max-width: 300px;
     /* ความกว้างสูงสุด */
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-card:hover {
-    transform: translateY(-10px); /* เด้งขึ้นเล็กน้อย */
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* เพิ่มเงาให้ดูเด่นขึ้น */
+    transform: translateY(-10px);
+    /* เด้งขึ้นเล็กน้อย */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาให้ดูเด่นขึ้น */
 }
 
 .menu-card img {
@@ -163,12 +178,14 @@ h2 {
     /* ระยะห่างรอบนอก */
     max-width: 300px;
     /* ความกว้างสูงสุด */
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-item:hover {
-    transform: translateY(-10px); /* เด้งขึ้นเล็กน้อย */
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.2); /* เพิ่มเงาให้ดูเด่นขึ้น */
+    transform: translateY(-10px);
+    /* เด้งขึ้นเล็กน้อย */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาให้ดูเด่นขึ้น */
 }
 
 .menu-card h4 {
@@ -198,6 +215,64 @@ h2 {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    font-family: "Noto Sans Georgian", sans-serif;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+      margin: 0 5px;
+      font-size: 20px;
+      color: #e74c3c;
+}
+
+.social-icons p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
 }
 
 footer {
